@@ -2,7 +2,7 @@
 == Links: September 9, 2026
 
 https://www.propublica.org/article/fbi-susan-collins-navatek-campaign-donations-investigation[FBI
-Eyed Susan Collins Over Defense Contractor’s Donations — ProPublica,window=_blank]
+Eyed Susan Collins Over Defense Contractor’s Donations — ProPublica,window=_blank,opts="noopener,nofallow"]
 
 https://www.lawfaremedia.org/article/invisible-source-skew[Invisible
 Source Skew ++|++ Lawfare,window=_blank]
