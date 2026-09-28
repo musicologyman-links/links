@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      TKinter Links
+    </title>
+<style>
+	body {
+		font-family: Arial, Helvetica, Sans-Serif;
+	}
+  .container { 
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+
+  #content_frame {
+    border: none;
+    /* border: 1px solid darkgray; */
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+    <div style="padding:0 10px;border-right: 1px solid darkgray;">
+    <h1 id="tkinter-links">
+      tkinter links
+    </h1>
+    <h2 id="askpython">
+      AskPython
+    </h2>
+    <p>
+      <a href="https://www.askpython.com/python-modules/tkinter/stringvar-with-examples">Tkinter StringVar with Examples - Tkinter Tutorial - AskPython</a>
+    </p>
+    <h2 id="tkinter-8.5-reference">
+      TKinter 8.5 Reference
+    </h2>
+    <p>
+      <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/text.html">24. The Text widget</a><br>
+      <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/ttk-Notebook.html">37. ttk.Notebook</a><br>
+      <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/event-sequences.html">54.2. Event sequences</a><br>
+      <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/event-types.html">54.3. Event types</a>
+    </p>
+    <h2 id="official-python-documentation">
+      Official Python documentation
+    </h2>
+    <p>
+      <a href="https://docs.python.org/3/library/enum.html#enum.show_flag_values">enum - Support for enumerations - Python 3 documentation</a><br>
+      <a href="https://docs.python.org/3/library/tkinter.font.html">tkinter.font - Tkinter font wrapper - Python 3 documentation</a><br>
+      <a href="https://docs.python.org/3/library/tkinter.scrolledtext.html#module-tkinter.scrolledtext">tkinter.scrolledtext - Scrolled Text Widget - Python 3 documentation</a>
+    </p>
+    <h2 id="tcltk-documentation">
+      Tcl/Tk documentation
+    </h2>
+    <p>
+      <a href="https://www.tcl.tk/man/tcl8.6/TkCmd/entry.htm">entry manual page - Tk Built-In Commands</a><br>
+      <a href="https://www.tcl.tk/man/tcl8.6/TkCmd/font.htm">font manual page - Tk Built-In Commands</a><br>
+      <a href="https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm">grid manual page - Tk Built-In Commands</a><br>
+      <a href="https://tcl.tk/man/tcl8.6/TkCmd/listbox.htm#M24">listbox manual page - Tk Built-In Commands</a><br>
+      <a href="https://tcl.tk/man/tcl8.6/TkCmd/text.htm">text manual page - Tk Built-In Commands</a><br>
+      <a href="https://tcl.tk/man/tcl8.6/TkCmd/ttk_notebook.htm">ttk::notebook manual page - Tk Themed Widget</a>
+    </p>
+    <h2 id="tkdocs">
+      TkDocs
+    </h2>
+    <p>
+      <a href="https://tkdocs.com/tutorial/morewidgets.html#text">TkDocs Tutorial - More Widgets</a>
+    </p>
+    <h2 id="tk-reference-manual-on-sourceforge.net">
+      Tk Reference Manual on sourceforge.net
+    </h2>
+    <p>
+      <a href="https://tmml.sourceforge.net/doc/tk/ttk_widget.html">Tk Reference Manual: ttk::widget</a>
+    </p>
+    <h2 id="ttkbootstrap">
+      ttkbootstrap
+    </h2>
+    <p>
+      <a href="https://ttkbootstrap.readthedocs.io/en/latest/">ttkbootstrap documentation</a><br>
+    </p>
+    <h2 id="google">Google Search</h2>
+    </p>
+      <a href="https://www.google.com/search?q=ttk.notebook" target="content_frame">Google search: ttk.notebook</a>
+    </p>
+    </div>
+    <iframe id="content_frame" name="content_frame">
+    </iframe>
+    </div>
+    <script>
+      let content_frame = document.getElementById('content_frame');
+      content_frame.height = window.innerHeight;
+      content_frame.width = window.innerWidth - 350;
+      let anchors = document.getElementsByTagName('a');
+      for (let anchor of anchors) {
+        anchor.target = "content_frame";
+      }
+			content_frame.srcdoc = "<html><head>" 
+				+ "<style>body {background-color: beige}</style>"
+				+ "</head><body></body></html>";
+    </script>
+  </body>
+</html>
